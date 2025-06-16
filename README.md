@@ -1,8 +1,8 @@
 # Electrical Connector Production Line Simulation  
-**Built with Arena Simulation Software – Rockwell Automation**
+**Built with Arena Simulation Software & SAP Crystal Reports**
 
 ## Project Description
-This project, carried out during my BSc in Industrial Engineering, models the production process of electrical connectors using Arena software (Rockwell Automation). The simulation replicates the entire workflow: from order arrival and raw material preparation to final packaging. It aims to analyze and optimize performance indicators such as productivity, WIP, and lead time.
+This project, carried out during my BSc in Industrial Engineering, models the production process of electrical connectors using Arena software (Rockwell Automation). The simulation replicates the entire workflow: from order arrival and raw material preparation to final packaging. It aims to analyze and optimize performance indicators such as productivity, WIP, and lead time using SAP Crystal Reports.
 
 ![image](https://github.com/user-attachments/assets/5841bf8a-983f-423d-a8ea-b016e7ee6e0b)
 
@@ -19,6 +19,8 @@ This project, carried out during my BSc in Industrial Engineering, models the pr
   - 200A female: 30%  
   - 500A male: 20%  
   - 500A female: 20%
+ 
+![image](https://github.com/user-attachments/assets/64cc7c6d-f048-46b8-9e2b-3e4e80c4efd7)
 
 ### 2. Preparation Station
 - Operator prepares basettes (20 contacts each) from raw bags (150 pieces)  
@@ -29,6 +31,9 @@ This project, carried out during my BSc in Industrial Engineering, models the pr
   - Process contact: `TRIA(7, 9, 12.5)` sec  
   - Move full cart: `UNIF(1.2, 2.5)` min
 
+![image](https://github.com/user-attachments/assets/3d72f307-a787-4321-8653-cba37a49e1dc)
+
+
 ### 3. Gold-Plating Station
 - Operator dips basettes into gold baths (2 available)  
 - Bath refill every 50 basettes: `UNIF(20, 30)` min  
@@ -37,6 +42,9 @@ This project, carried out during my BSc in Industrial Engineering, models the pr
   - Plating time: 8 min  
   - Remove basette: `TRIA(14, 16, 18)` sec  
 - Full carts sent to pressing
+
+![image](https://github.com/user-attachments/assets/5232cc71-68b7-432e-bac2-bc17d9283a82)
+
 
 ### 4. Pressing Station
 - Operator inserts contacts and plastic shells into molds  
@@ -47,6 +55,9 @@ This project, carried out during my BSc in Industrial Engineering, models the pr
   - Press cycle: 7 sec  
   - Unload: `TRIA(0.6, 1, 1.5)` sec
 
+
+![image](https://github.com/user-attachments/assets/e0faede2-9bc8-48cc-8673-61d23971fc51)
+
 ### 5. Testing Station
 - All connectors tested (100%)  
 - Failure rate:  
@@ -54,6 +65,9 @@ This project, carried out during my BSc in Industrial Engineering, models the pr
   - 500A = 2%  
 - Defects logged: `UNIF(60, 120)` sec  
 - Good units stored by type
+
+![image](https://github.com/user-attachments/assets/c94fd7a6-4559-4d2c-99ab-0a5a3b3dc5b7)
+
 
 ### 6. Packaging Station
 - 200A: Bags of 30 units  
@@ -65,6 +79,8 @@ This project, carried out during my BSc in Industrial Engineering, models the pr
   - Pack 200A: `TRIA(4, 5.5, 7)` min  
   - Pack 500A: `TRIA(7, 9, 12)` min  
   - Seal: `UNIF(20, 35)` sec
+ 
+![image](https://github.com/user-attachments/assets/0d6a4ec9-5b92-42b4-b635-68212ea3d59e)
 
 ---
 
